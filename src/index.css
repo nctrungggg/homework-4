@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    overflow-x: none;
+    -ms-overflow-style: none;
+    font-family: "Epilogue", sans-serif;
+    background-color: #f7f7f7;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.box-shadow {
+  box-shadow: 0 8px 24px hsla(210, 8%, 62%, 0.4);
+}
